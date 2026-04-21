@@ -101,13 +101,16 @@ jobs:
           done < changed_files.txt
 
       - name: Trigger frontend revalidation
-        if: ${{ secrets.NEXT_REVALIDATE_URL != '' && secrets.NEXT_REVALIDATE_SECRET != '' }}
         env:
           NEXT_REVALIDATE_URL: ${{ secrets.NEXT_REVALIDATE_URL }}
           NEXT_REVALIDATE_SECRET: ${{ secrets.NEXT_REVALIDATE_SECRET }}
         shell: bash
         run: |
           set -euo pipefail
+          if [[ -z "${NEXT_REVALIDATE_URL:-}" || -z "${NEXT_REVALIDATE_SECRET:-}" ]]; then
+            echo "Skipping revalidation: NEXT_REVALIDATE_URL or NEXT_REVALIDATE_SECRET is not set."
+            exit 0
+          fi
           curl -sS -X POST "$NEXT_REVALIDATE_URL" \
             -H "Content-Type: application/json" \
             --data "{\"secret\": \"$NEXT_REVALIDATE_SECRET\"}"
