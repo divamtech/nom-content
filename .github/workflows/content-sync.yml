@@ -1,0 +1,113 @@
+name: Content Sync
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "content/**"
+
+jobs:
+  sync-kb:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Sync changed content files to backend
+        env:
+          SYNC_API_URL: ${{ secrets.SYNC_API_URL }}
+          SYNC_TOKEN: ${{ secrets.SYNC_TOKEN }}
+          SITE_BASE_URL: ${{ vars.SITE_BASE_URL }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ -z "${SYNC_API_URL:-}" || -z "${SYNC_TOKEN:-}" ]]; then
+            echo "SYNC_API_URL and SYNC_TOKEN secrets are required."
+            exit 1
+          fi
+
+          BEFORE_SHA="${{ github.event.before }}"
+          AFTER_SHA="${{ github.sha }}"
+
+          if [[ "$BEFORE_SHA" == "0000000000000000000000000000000000000000" ]]; then
+            git ls-files "content/blogs/*.md" "content/case-studies/*.md" | sed 's/^/A\t/' > changed_files.txt
+          else
+            git diff --name-status "$BEFORE_SHA" "$AFTER_SHA" -- "content/blogs/*.md" "content/case-studies/*.md" > changed_files.txt
+          fi
+
+          if [[ ! -s changed_files.txt ]]; then
+            echo "No blog/case-study markdown changes detected."
+            exit 0
+          fi
+
+          while IFS=$'\t' read -r status path; do
+            [[ -z "$path" ]] && continue
+
+            doc_type=""
+            case "$path" in
+              content/blogs/*) doc_type="blog" ;;
+              content/case-studies/*) doc_type="case_study" ;;
+              *)
+                echo "Skipping unsupported path: $path"
+                continue
+                ;;
+            esac
+
+            filename="$(basename "$path" .md)"
+            doc_id="${path%.md}"
+            if [[ "$doc_type" == "blog" ]]; then
+              page_prefix="blog"
+            else
+              page_prefix="case-studies"
+            fi
+            url="${SITE_BASE_URL:-https://www.newtononmars.com}/$page_prefix/$filename"
+
+            event="update"
+            if [[ "$status" == A* ]]; then
+              event="publish"
+            elif [[ "$status" == D* ]]; then
+              event="delete"
+            fi
+
+            if [[ "$event" == "delete" ]]; then
+              payload=$(jq -n \
+                --arg event "$event" \
+                --arg doc_id "$doc_id" \
+                --arg type "$doc_type" \
+                --arg source_path "$path" \
+                --arg url "$url" \
+                '{event: $event, doc_id: $doc_id, type: $type, source_path: $source_path, url: $url}')
+            else
+              content=$(cat "$path")
+              payload=$(jq -n \
+                --arg event "$event" \
+                --arg doc_id "$doc_id" \
+                --arg type "$doc_type" \
+                --arg source_path "$path" \
+                --arg url "$url" \
+                --arg content "$content" \
+                '{event: $event, doc_id: $doc_id, type: $type, source_path: $source_path, url: $url, content: $content}')
+            fi
+
+            echo "Syncing $event -> $path"
+            curl -sS -X POST "$SYNC_API_URL/api/v1/sync-kb" \
+              -H "Authorization: Bearer $SYNC_TOKEN" \
+              -H "Content-Type: application/json" \
+              --data "$payload"
+            echo
+          done < changed_files.txt
+
+      - name: Trigger frontend revalidation
+        if: ${{ secrets.NEXT_REVALIDATE_URL != '' && secrets.NEXT_REVALIDATE_SECRET != '' }}
+        env:
+          NEXT_REVALIDATE_URL: ${{ secrets.NEXT_REVALIDATE_URL }}
+          NEXT_REVALIDATE_SECRET: ${{ secrets.NEXT_REVALIDATE_SECRET }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -sS -X POST "$NEXT_REVALIDATE_URL" \
+            -H "Content-Type: application/json" \
+            --data "{\"secret\": \"$NEXT_REVALIDATE_SECRET\"}"
