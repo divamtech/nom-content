@@ -45,7 +45,7 @@ A vector-only retriever may return records from 2020, 2021, and 2022 because all
 - Context bloat: unnecessary text fills the model context window.
 - Higher cost and risk: more tokens, plus a higher chance of hallucination.
 
-<img width="1100" height="588" alt="image" src="https://github.com/user-attachments/assets/5c773113-8859-432d-a6d8-185f3eb47ea3" />
+![](https://github.com/user-attachments/assets/5c773113-8859-432d-a6d8-185f3eb47ea3)
 
 ## The Hybrid Retrieval Approach
 
