@@ -1,10 +1,19 @@
 ---
 title: "Meeting Summarizer Agent – Get the Minutes, Not the Mess"
-excerpt: "How DivamTech’s AI agent transforms messy meeting recordings into clear summaries, decisions, and actionable insights."
+excerpt: "How DivamTech's Meeting Summarizer AI Agent distills meeting chaos into structured clarity with action items and decisions."
 date: "2025-05-25"
 author: "mansiikumarii"
-tags: ["AI Agents", "Automation", "Productivity", "NLP", "Meeting Tools"]
-status: "published"
+tags: ["AI Agents", "Productivity", "Automation", "Meeting Tools"]
+status: published
+industry: "PRODUCTIVITY"
+subtitle: "How teams stop forgetting what their meeting was even about"
+description: "An AI agent that takes audio recordings or transcripts and generates structured summaries, decisions, and action items instantly."
+stat1_value: "4 MIN"
+stat1_label: "READ TIME"
+stat2_value: "GPT-4o"
+stat2_label: "LLM USED"
+stat3_value: "EASY"
+stat3_label: "TIME TO LAUNCH"
 ---
 
 # Meeting Summarizer Agent – Get the Minutes, Not the Mess
@@ -13,65 +22,39 @@ status: "published"
 
 ---
 
-Meetings are critical—but sifting through recordings and transcripts afterward? Not so much.
-
-At **DivamTech**, we developed a **Meeting Summarizer AI Agent** that transforms chaos into structured clarity.
-
----
+Meetings are critical — but sifting through recordings and transcripts afterward? Not so much. At DivamTech, we developed a Meeting Summarizer AI Agent that distills the chaos into structured clarity.
 
 ## 🗓️ The Challenge
 
-- People forget follow-ups  
-- Manual note-taking misses nuance  
-- Long transcripts go unread and unused  
-
----
+- People forget follow-ups
+- Manual note-takers can't keep up or capture nuance
+- Long transcripts are unread and unused
 
 ## 🤖 The AI Agent Solution
 
-Our AI agent:
+Our agent:
 
-- Takes **audio recordings or transcripts**  
-- Identifies **key points, decisions, and tasks**  
-- Generates a **clear meeting summary + follow-up document**  
-
----
+- Takes audio recordings or transcripts
+- Identifies key points, decisions, and tasks
+- Generates a clear meeting summary and follow-up doc
 
 ## ⚙️ Workflow Specs
 
-- **Interface:** Upload audio or transcript  
-- **LLM Used:** GPT-4o + Whisper / AssemblyAI (for audio-to-text)  
-- **Output:**  
-  - Bullet-point summary  
-  - Key decisions  
-  - Action items  
-- **Time to Launch:** Easy  
-
----
+- **Interface:** Upload audio or transcript
+- **LLM Used:** GPT-4o + Whisper/AssemblyAI for audio → text
+- **Output:** Bullet summary, decisions, action items
+- **Time to Launch:** Easy
 
 ## 📈 What It Unlocks
 
-- ⏱ **Instant clarity** from any meeting recording  
-- ✅ **Better follow-through** with defined action items  
-- 🧠 Enables **async collaboration and documentation**  
-
----
+- ⏱ Instant clarity from any meeting recording
+- ✅ Better follow-through with action items
+- 🧠 Enables async participation and documentation
 
 ## 💼 Why DivamTech?
 
-We design AI agents that think like **human admins**—but deliver with the **speed and consistency of machines**.
+We design AI agents that think like human admins — but deliver like machines. Our summarizer can plug into tools like Zoom, Meet, or Slack automatically.
 
-Our meeting summarizer can seamlessly integrate with:
-- Zoom  
-- Google Meet  
-- Slack  
+Want to stop forgetting what your meeting was even about?
 
----
-
-## 🚀 Ready to Upgrade Your Meetings?
-
-Stop forgetting what your meetings were even about.
-
-> Automate your meeting minutes with AI.
-
-👉 https://divamtech.com/contact
+**Let's automate your minutes with AI → [divamtech.com/contact](https://divamtech.com/contact)**

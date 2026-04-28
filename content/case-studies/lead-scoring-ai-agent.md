@@ -1,85 +1,61 @@
 ---
 title: "Lead Scoring Agent – AI That Tells You Who to Call First"
-excerpt: "How DivamTech’s AI-powered lead scoring agent helps sales teams prioritize high-quality prospects and improve conversion rates."
+excerpt: "How DivamTech's Lead Scoring AI Agent empowers sales teams to prioritize the hottest leads using real-time data and intelligent scoring."
 date: "2025-05-20"
 author: "mansiikumarii"
 tags: ["AI Agents", "Sales", "Automation", "Lead Generation", "B2B"]
-status: "published"
+status: published
+industry: "SALES"
+subtitle: "How sales teams use AI to focus on leads that actually convert"
+description: "An AI agent that analyzes company websites and market signals, pulls real-time data, and scores leads based on viability, fit, and intent — in under 1 minute."
+stat1_value: "1 MIN"
+stat1_label: "LEAD SCORE TIME"
+stat2_value: "GPT-4o"
+stat2_label: "LLM USED"
+stat3_value: "MEDIUM"
+stat3_label: "TIME TO LAUNCH"
 ---
 
 # Lead Scoring Agent – AI That Tells You Who to Call First
 
-*by mansiikumarii*
+*by Divam Digest*
 
 ---
 
-Sales success starts with **smart prioritization**. But scoring leads manually is slow, biased, and inefficient.
-
-At **DivamTech**, we built a **Lead Scoring AI Agent** that helps sales teams focus on what matters most—the hottest leads.
-
----
+Sales success starts with smart prioritization. But scoring leads manually is slow, biased, and inefficient. DivamTech built a Lead Scoring AI Agent that empowers sales teams to focus on what matters — the hottest leads.
 
 ## 📉 The Problem
 
-- Reps spend hours researching:
-  - Company size  
-  - Funding  
-  - Fit  
-  - Intent  
-- Manual scoring is **subjective and inconsistent**  
-- High-potential leads often **fall through the cracks**  
-
----
+- Reps waste hours researching company size, funding, fit, and intent
+- Manual scoring is subjective and inconsistent
+- High-potential leads fall through the cracks
 
 ## 🤖 The AI Agent Solution
 
 Our AI Lead Scoring Agent:
 
-- Analyzes **company websites and market signals**  
-- Pulls data from **Google Search and web profiles**  
-- Scores leads based on:
-  - Real-time viability  
-  - Business fit  
-  - Buying intent  
-
----
+- Analyzes company websites and market signals
+- Pulls in data from Google search and web profiles
+- Scores leads based on real-time viability, fit, and intent
 
 ## ⚙️ Technical Blueprint
 
-- **Interface:** Simple input form (company name)  
-- **LLM Used:** Claude 3 Opus + OpenAI GPT-4o  
-- **Data Source:**  
-  - Google Search  
-  - Company websites  
-  - Custom vector database  
-- **Output:** Scored lead with detailed justification  
-- **Time to Launch:** Medium  
+- **Interface:** Simple input form (company name)
+- **LLM Used:** Claude 3 Opus + OpenAI GPT-4o
+- **Data Source:** Google Search, Company Websites, Custom Vector Store
+- **Output:** Scored lead with justification
+- **Time to Launch:** Medium
 
----
+## 💼 Business Benefits
 
-## 📈 Business Benefits
-
-- ⏱ Score leads in **under 1 minute**  
-- 📊 Focus on **high-conversion prospects**  
-- 💸 Increase close rates and **shorten sales cycles**  
-
----
+- ⏱ Score leads in under 1 minute
+- 📊 Focus on qualified prospects who convert
+- 💸 Increase close rates and shorten sales cycles
 
 ## 💼 Why DivamTech?
 
-Our sales agents are built using **real-world B2B logic**, not just generic AI responses.
+Our sales agents are trained on real-world B2B logic — not just chat completions. From enrichment to scoring, we design intelligent workflows that outperform spreadsheets and static CRMs.
 
-From lead enrichment to scoring, we design:
-- Intelligent workflows  
-- Data-driven decision systems  
-- Scalable sales automation  
+Want your sales team to focus on closable leads?
 
----
-
-## 🚀 Ready to Prioritize the Right Leads?
-
-Stop wasting time on low-quality prospects.
-
-> Build your AI-powered sales engine today.
-
-👉 https://divamtech.com/contact
+**Let's build your next AI sales engine → [divamtech.com/contact](https://divamtech.com/contact)**
