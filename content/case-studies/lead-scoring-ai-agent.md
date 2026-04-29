@@ -1,12 +1,10 @@
 ---
 title: "Lead Scoring Agent – AI That Tells You Who to Call First"
-excerpt: "How DivamTech's Lead Scoring AI Agent empowers sales teams to prioritize the hottest leads using real-time data and intelligent scoring."
 date: "2025-05-20"
 author: "mansiikumarii"
 tags: ["AI Agents", "Sales", "Automation", "Lead Generation", "B2B"]
 status: published
 industry: "SALES"
-subtitle: "How sales teams use AI to focus on leads that actually convert"
 description: "An AI agent that analyzes company websites and market signals, pulls real-time data, and scores leads based on viability, fit, and intent — in under 1 minute."
 stat1_value: "1 MIN"
 stat1_label: "LEAD SCORE TIME"

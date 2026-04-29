@@ -6,7 +6,6 @@ author: "mansiikumarii"
 tags: ["AI Agents", "Fintech", "Automation", "Invoice Processing"]
 status: published
 industry: "FINTECH"
-subtitle: "How finance teams automate invoice parsing and digitization using AI"
 description: "An AI agent that accepts invoice uploads, uses OCR and LLM parsing to extract key fields, and outputs structured JSON ready for ERP integration."
 stat1_value: "90%"
 stat1_label: "PROCESSING TIME ↓"

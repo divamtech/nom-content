@@ -1,12 +1,10 @@
 ---
 title: "Programmatic SEO Tool – Publish 1,000+ SEO Pages Overnight"
-excerpt: "How DivamTech's Programmatic SEO Tool helps growth teams generate, optimize, and launch thousands of SEO-friendly pages automatically."
 date: "2025-05-22"
 author: "mansiikumarii"
 tags: ["AI Agents", "SEO", "Automation", "Content Marketing"]
 status: published
 industry: "MARKETING"
-subtitle: "How growth teams use AI to automate large-scale SEO content generation"
 description: "An AI agent that accepts a CSV of keyword pairs and automatically writes blog posts, meta descriptions, headings, and alt text — all optimized for search."
 stat1_value: "1,000+"
 stat1_label: "PAGES OVERNIGHT"

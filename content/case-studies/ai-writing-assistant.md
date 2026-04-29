@@ -1,12 +1,10 @@
 ---
 title: "AI Writing Assistant – Keep Every Word On-Brand, Instantly"
-excerpt: "How DivamTech's AI Writing Assistant ensures brand consistency, improves clarity, and reduces editing effort across all content."
 date: "2025-05-21"
 author: "mansiikumarii"
 tags: ["AI Agents", "Content", "Automation", "Branding", "Writing Tools"]
 status: published
 industry: "CONTENT"
-subtitle: "How content teams ensure every word stays on-brand with AI"
 description: "An AI Writing Assistant that reads your draft, references your brand style guide, and suggests inline edits to ensure tone, grammar, and format stay brand-compliant."
 stat1_value: "80%"
 stat1_label: "EDITING CYCLES ↓"

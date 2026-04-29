@@ -1,12 +1,10 @@
 ---
 title: "Resume-to-Job-Match Agent – AI That Finds the Right Job in Seconds"
-excerpt: "How DivamTech's Resume-to-Job-Match Agent connects candidates to roles instantly using NLP-powered matching and contextual understanding."
 date: "2025-05-23"
 author: "mansiikumarii"
 tags: ["AI Agents", "Recruitment", "Automation", "HR Tech"]
 status: published
 industry: "HR TECH"
-subtitle: "How recruitment platforms use AI to match candidates to roles instantly"
 description: "An AI agent that parses resumes, extracts skills and experience, and ranks candidates against a live job pool to deliver top-match results instantly."
 stat1_value: "GPT-4o"
 stat1_label: "LLM USED"

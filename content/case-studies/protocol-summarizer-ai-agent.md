@@ -1,12 +1,10 @@
 ---
 title: "Protocol Summarizer – AI That Turns Complex Medical Docs Into Action"
-excerpt: "How DivamTech's Protocol Summarizer AI Agent turns lengthy clinical documents into visual slide summaries so medical professionals can focus on care, not paperwork."
 date: "2025-05-18"
 author: "mansiikumarii"
 tags: ["AI Agents", "Healthcare", "Automation", "Medical", "Document Processing"]
 status: published
 industry: "HEALTHCARE"
-subtitle: "How medical teams use AI to absorb complex clinical protocols instantly"
 description: "An AI agent that accepts clinical protocol documents, uses a 3-model LLM chain to extract key info, and outputs slide-style summaries for busy medical staff."
 stat1_value: "3x"
 stat1_label: "LLM CHAIN"

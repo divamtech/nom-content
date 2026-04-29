@@ -1,12 +1,10 @@
 ---
 title: "Meeting Summarizer Agent – Get the Minutes, Not the Mess"
-excerpt: "How DivamTech's Meeting Summarizer AI Agent distills meeting chaos into structured clarity with action items and decisions."
 date: "2025-05-25"
 author: "mansiikumarii"
 tags: ["AI Agents", "Productivity", "Automation", "Meeting Tools"]
 status: published
 industry: "PRODUCTIVITY"
-subtitle: "How teams stop forgetting what their meeting was even about"
 description: "An AI agent that takes audio recordings or transcripts and generates structured summaries, decisions, and action items instantly."
 stat1_value: "4 MIN"
 stat1_label: "READ TIME"
