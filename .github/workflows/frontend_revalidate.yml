@@ -1,0 +1,42 @@
+name: Revalidate Frontend
+on:
+  push:
+    paths:
+      - 'content/blogs/**.md'
+      - 'content/case-studies/**.md'
+
+jobs:
+  revalidate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout content
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Get changed files and trigger revalidate
+        run: |
+          # Get list of changed markdown files
+          CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep '\.md$' || true)
+          
+          for file in $CHANGED_FILES; do
+            # Extract slug: remove path and .md extension
+            # e.g., content/blogs/my-post.md -> my-post
+            SLUG=$(basename "$file" .md)
+            
+            # Determine type based on directory
+            TYPE="blog"
+            if [[ "$file" == content/case-studies/* ]]; then
+              TYPE="case-study"
+            fi
+            
+            echo "Revalidating $TYPE: $SLUG"
+            
+            curl -X POST ${{ vars.FRONTEND_BASE_URL }}/api/revalidate \
+              -H "Content-Type: application/json" \
+              -d "{
+                \"secret\": \"${{ secrets.FRONTEND_REVALIDATE_SECRET }}\",
+                \"slug\": \"$SLUG\",
+                \"type\": \"$TYPE\"
+              }"
+          done
