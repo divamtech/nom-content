@@ -2,7 +2,7 @@
 title: "Q-Commerce vs. Traditional E-Commerce & Offline Retail: The Race for Consumer Loyalty"
 excerpt: "How ultra-fast delivery is reshaping consumer expectations and challenging traditional e-commerce and offline retail models."
 date: "2024-11-14"
-author: "mansiikumarii"
+author: "sujeetgund"
 tags: ["Q-Commerce", "E-Commerce", "Retail", "Logistics", "Consumer Behavior"]
 status: "published"
 ---
