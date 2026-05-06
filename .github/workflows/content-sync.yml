@@ -93,7 +93,7 @@ jobs:
             fi
 
             echo "Syncing $event -> $path"
-            curl -sS -X POST "$SYNC_API_URL/api/v1/sync-kb" \
+            curl -sS -X POST "$SYNC_API_URL/api/v1/content/sync" \
               -H "Authorization: Bearer $SYNC_TOKEN" \
               -H "Content-Type: application/json" \
               --data "$payload"
