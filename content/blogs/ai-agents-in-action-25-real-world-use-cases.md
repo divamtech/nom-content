@@ -2,7 +2,7 @@
 title: "AI Agents in Action – 25 Real-World Use Cases That Prove the Power of Intelligent Automation"
 excerpt: "Explore how AI agents are transforming industries from finance to healthcare. 25 real-world use cases. One powerful truth: automation is no longer optional."
 date: "2025-05-25"
-author: "mansiikumarii"
+author: "sujeetgund"
 tags: ["AI", "Automation", "AI Agents", "Use Cases", "Enterprise"]
 status: "published"
 source: "https://divamtech.com/blogs/ai-agents-25-use-cases-enterprise-automation"
