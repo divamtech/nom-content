@@ -1,23 +1,11 @@
 ---
 title: "Contract Redlining Agent – Let AI Review Legal Docs So You Don't Have To"
 date: "2025-05-19"
-author: "mansiikumarii"
+author: "sujeetgund"
 tags: ["AI Agents", "Legal", "Automation", "Contract Review", "Compliance"]
-status: published
+status: "published"
 industry: "LEGAL"
-description: "An AI agent that accepts any contract file, identifies risky language, suggests redlines, and outputs annotated versions for faster legal review."
-stat1_value: "MINUTES"
-stat1_label: "VS HOURS REVIEW"
-stat2_value: "CLAUDE 3.5"
-stat2_label: "LLM USED"
-stat3_value: "EASY"
-stat3_label: "TIME TO LAUNCH"
----
-
-# Contract Redlining Agent – Let AI Review Legal Docs So You Don't Have To
-
-*by Divam Digest*
-
+excerpt: "An AI agent that accepts any contract file, identifies risky language, suggests redlines, and outputs annotated versions for faster legal review."
 ---
 
 Reviewing contracts is tedious, slow, and requires deep expertise. At DivamTech, we built a smart Contract Redlining Agent that automatically reviews, flags, and suggests revisions — empowering teams to close deals faster and safer.
