@@ -49,8 +49,6 @@ Instead of letting the model operate freely, the harness controls:
 
 Think of the LLM as the reasoning engine and the harness as the runtime system that keeps the workflow stable.
 
-![](https://github.com/user-attachments/assets/9cfd51d3-6f9e-4cf2-9cf4-40b52a9dc8e5)
-
 ## Why Simple Agents Break in Production
 
 ### 1. Tool Calling Is Non-Deterministic
