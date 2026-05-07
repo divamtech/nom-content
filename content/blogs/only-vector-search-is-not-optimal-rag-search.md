@@ -1,5 +1,5 @@
 ---
-title: "Why Vector Search Alone Is Not Optimal for RAG"
+title: "Why Vector Search Alone Is Not Optimal RAG Search"
 excerpt: "Vector search captures meaning, but hybrid retrieval with BM25 adds precision. This guide shows why combining both improves RAG relevance and reduces noisy context."
 date: "2026-02-01"
 author: "sujeetgund"
