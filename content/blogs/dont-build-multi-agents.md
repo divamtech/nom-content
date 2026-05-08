@@ -1,5 +1,5 @@
 ---
-title: "Don't Build Multi-Agents"
+title: "[HOT] Don't Build Multi-Agents"
 excerpt: "Why multi-agent architectures are fragile in 2025, and the two core principles of context engineering that should guide how you build reliable AI agents."
 date: "2025-06-12"
 author: "walden-yan"
