@@ -1,5 +1,5 @@
 ---
-title: "[NEW] AI Writing Assistant – Keep Every Word On-Brand, Instantly"
+title: "AI Writing Assistant – Keep Every Word On-Brand, Instantly"
 date: "2025-05-21"
 author: "mansiikumarii"
 tags: ["AI Agents", "Content", "Automation", "Branding", "Writing Tools"]
