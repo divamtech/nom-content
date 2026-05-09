@@ -1,5 +1,5 @@
 ---
-title: "AI Invoice Processing Agent – Automate AP Workflows Without Manual Data Entry"
+title: "Agentic Invoice Processing System – Automate AP Workflows Without Manual Data Entry"
 date: "2026-05-06"
 author: "mansiikumarii"
 tags: ["AI Agents", "Finance", "Automation", "Accounts Payable", "OCR"]
