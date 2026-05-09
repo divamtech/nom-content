@@ -14,7 +14,7 @@ stat3_value: "MEDIUM"
 stat3_label: "TIME TO LAUNCH"
 ---
 
-# AI Invoice Processing Agent – Automate AP Workflows Without Manual Data Entry
+# Agentic Invoice Processing System – Automate AP Workflows Without Manual Data Entry
 
 *by Divam Digest*
 
