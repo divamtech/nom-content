@@ -1,5 +1,5 @@
 ---
-title: "[NEW] Support Ticket Routing Agent – Automate Your Triage with AI"
+title: "Support Ticket Routing Agent – Automate Your Triage with AI"
 date: "2026-05-08"
 author: "sujeetgund"
 tags: ["AI Agents", "Customer Support", "Automation", "Helpdesk", "Triage"]
