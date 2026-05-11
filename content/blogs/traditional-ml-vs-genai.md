@@ -1,7 +1,7 @@
 ---
 title: "Traditional ML vs Generative AI: Choosing the Right Tool for the Job"
 excerpt: "Both traditional ML and generative AI are powerful, but they solve fundamentally different problems. This guide breaks down when to use which, with real-world examples and architectural trade-offs."
-date: "2026-05-11"
+date: "2026-02-01"
 author: "sujeetgund"
 tags: ["Machine Learning", "Generative AI", "LLMs", "MLOps", "AI Engineering"]
 status: "published"
