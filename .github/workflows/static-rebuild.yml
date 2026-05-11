@@ -1,0 +1,23 @@
+name: Sync Content and Rebuild Website
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'content/**'
+
+jobs:
+  automation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Backend KB Sync
+        run: |
+          curl -X POST "${{ secrets.BACKEND_SYNC_URL }}/api/v1/content/sync" \
+          -H "Authorization: Bearer ${{ secrets.SYNC_SECRET_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{"event": "github_push"}'
+          
+      - name: Trigger Amplify Build
+        run: |
+          curl -X POST -d {} "${{ secrets.AMPLIFY_BUILD_WEBHOOK }}" -H "Content-Type:application/json"
