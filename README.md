@@ -80,6 +80,58 @@ To maintain consistency across the site, case studies **may** follow this sectio
 
 ---
 
+## Supported Markdown Features
+
+The website uses a modern rendering pipeline that supports several advanced blocks:
+
+### 🖼️ Images
+Standard markdown images are automatically optimized using Next.js Image:
+```markdown
+![Description of image](https://example.com/image.jpg)
+```
+- **Pro-tip**: Drag-and-drop images into the GitHub editor to host them easily.
+
+### 🔢 LaTeX / Math Rendering
+Mathematical formulas are rendered using KaTeX.
+- **Inline**: `$E = mc^2$`
+- **Block**:
+  ```markdown
+  $$
+  I = \int_{0}^{\infty} e^{-x^2} dx
+  $$
+  ```
+
+### 📊 Tables & GFM
+Full support for GitHub Flavored Markdown, including:
+- **Tables** (with alignment)
+- **Task Lists** (`- [x] task`)
+- **Strikethrough** (`~~text~~`)
+- **Autolinks**
+
+### 💻 Code Syntax Highlighting
+Beautiful highlighting for 100+ languages using Shiki.
+```typescript
+const hello = "world";
+```
+
+### 📊 Mermaid Diagrams
+Architecture diagrams and flowcharts are supported via Mermaid.js.
+- **Usage**: Wrap your mermaid code in a triple-backtick block with the `mermaid` language tag.
+  ```markdown
+  ```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+  ```
+  ```
+
+### 🔗 Auto-Anchors
+All headings (`##`, `###`) automatically generate IDs and hover-anchors for deep linking.
+
+---
+
 ## General Notes
 - **Images**: If adding images, drag-and-drop them in github file editor or use external URLs.
 - **Status**: Set `status: "draft"` if you are not ready for the post to go live.
